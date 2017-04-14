@@ -57,3 +57,4 @@ module.exports = class HandlePizzaOrder {
         let messages = [bot.create_text_message(`${context.confirmed.name} 様、ご注文ありがとうございました！${context.confirmed.pizza}の${context.confirmed.size}サイズを30分以内にご指定の${context.confirmed.address}までお届けに上がります。`)];
         return bot.reply(bot_event, messages);
     }
+}
